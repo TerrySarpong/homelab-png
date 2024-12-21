@@ -1,8 +1,11 @@
-@import url("https://raw.githubusercontent.com/TerrySarpong/homelab-png/main/Custom%20Theme");
+.adminDrawerLogo img { content: url(https://download.logo.wine/logo/Apple_TV/Apple_TV-Logo.wine.png) !important; } 
+
+imgLogoIcon { content: url(https://download.logo.wine/logo/Apple_TV/Apple_TV-Logo.wine.png) !important; } .pageTitleWithLogo 
+{ background-image: url(https://download.logo.wine/logo/Apple_TV/Apple_TV-Logo.wine.png) !important; }
 
 /* Add Background Image to the Login Screen */
 #loginPage {
-    background: url('https://www.apple.com/v/apple-tv-plus/aj/images/meta/apple-tv__e7aqjl2rqzau_og.png') no-repeat center center fixed;
+    background: url('https://wallpapers.com/images/hd/apple-tv-logo-hg0tcp5zevi171lg.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff !important;
 }
