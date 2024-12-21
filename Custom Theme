@@ -1,0 +1,154 @@
+
+/* Add Background Image to the Login Screen */
+#loginPage {
+    background: url('https://www.apple.com/v/apple-tv-plus/aj/images/meta/apple-tv__e7aqjl2rqzau_og.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff !important;
+}
+
+
+/* Center Login Box with Subtle Glow */
+#loginPage .loginPage {
+    background: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.4); /* Soft glow */
+    color: #ffffff;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Style the Login Buttons */
+#loginPage .raised.loginButton {
+    background-color: #00bcd4 !important;
+    color: #ffffff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#loginPage .raised.loginButton:hover {
+    background-color: #0288a6 !important;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Style Input Fields */
+#loginPage input {
+    border: 1px solid #555;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 12px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+#loginPage input:focus {
+    border-color: #00bcd4;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Improve "Please sign in" Text */
+#loginPage h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Root Variables */
+:root {
+    --background-color: #121212; 
+    --text-color: #e0e0e0; 
+    --highlight-color: #00bcd4;
+    --card-background: #1e1e1e; 
+    --hover-scale: 1.05;
+}
+
+/* Fully Transparent Header Bar */
+.skinHeader {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+}
+
+/* Header Text and Icons */
+.skinHeader .headerToolbarButton,
+.skinHeader .headerLogo,
+.skinHeader .headerTabs a {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.skinHeader .headerToolbarButton:hover,
+.skinHeader .headerTabs a:hover {
+    color: #00bcd4 !important;
+}
+
+.skinHeader .headerTabs a.active {
+    color: #00bcd4 !important;
+    font-weight: bold;
+}
+
+/* Sidebar Styling */
+.mainDrawer {
+    background: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(5px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mainDrawer .listItem {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.mainDrawer .listItem:hover {
+    color: #00bcd4 !important;
+}
+
+.mainDrawer .divider {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Cards and Movie Posters */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(var(--hover-scale));
+    box-shadow: 0 10px 15px rgba(0, 188, 212, 0.6);
+}
+
+.cardImageContainer img {
+    border-radius: 12px 12px 0 0;
+    filter: brightness(0.8);
+    transition: filter 0.3s ease;
+}
+
+.card:hover img {
+    filter: brightness(1);
+}
+
+/* Add Glow and Grow Effect on Click */
+.card:active {
+    transform: scale(1.2) !important;
+    box-shadow: 0 0 30px 10px rgba(0, 188, 212, 0.8) !important;
+    z-index: 10;
+}
+
+
+
+#videoPlayer, .mediaContainer {
+    z-index: 2;
+    filter: none !important;
+    backdrop-filter: none !important;
+}
