@@ -1,4 +1,3 @@
-
 /* Add Background Image to the Login Screen */
 #loginPage {
     background: url('https://www.apple.com/v/apple-tv-plus/aj/images/meta/apple-tv__e7aqjl2rqzau_og.png') no-repeat center center fixed;
